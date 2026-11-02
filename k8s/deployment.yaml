@@ -1,7 +1,9 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: booknest
+  namespace: booknest
   labels:
     app: booknest
 spec:
@@ -16,7 +18,7 @@ spec:
     spec:
       containers:
         - name: booknest
-          image: ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/booknest:INITIAL
+          image: booknest-app:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
