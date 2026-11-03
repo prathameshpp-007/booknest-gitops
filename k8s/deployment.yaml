@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: booknest
-          image: ghcr.io/prathameshpp-007/booknest-app:de4331cf5815e13ee653284c9aa02dfb5a87de01
+          image: ghcr.io/prathameshpp-007/booknest-app:85d876e28b59aaa0741f366c8e6c28ccb8f5ae19
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
